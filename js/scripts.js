@@ -8,7 +8,6 @@ function Pizza() {
     mushroom: false,
     onion: false,
     olive: false,
-    bacon: false,
     ham: false,
     pineapple: false,
     greenPepper: false,
@@ -30,7 +29,7 @@ function Dessert() {
   this.dessertPrice = 0;
 }
 
-Pizza.prototype.price = function() {
+Pizza.prototype.pizzaTotal = function() {
   var price = 0;
   $.each(this.pizzaToppings, function(topping, existence) {
     if (existence === true) {
@@ -43,4 +42,5 @@ Pizza.prototype.price = function() {
 //Front-end
 $(function() {
 
+  // newPizza.pizzaTotal();
 });

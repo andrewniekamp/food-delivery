@@ -20,6 +20,8 @@ Viewable on GitHub Pages at: https://aniekamp.github.io/food-delivery/
 | create an empty food object | "#order".click |Sammich {}|
 | add prototypes for different configurations | "#cheese".click |Sammich {cheese: true}|
 | add prototype for price depending on config| cheese.price |Sammich.totalPrice += $1.50|
+| tie event to toppings | submit checkbox value | pizza {mushroom: true} |
+|  |  |  |
 | styling| -- | -- |
 |  |  |  |
 |  |  |  |
