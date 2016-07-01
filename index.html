@@ -7,7 +7,51 @@
     <title></title>
   </head>
   <body>
+    <div class="container">
+      <div class="pizza-container">
 
+        <form id="pizza-form" class="form form-group">
+          <label for="size"></label>
+          <select id="size" class="form-control">
+            <option>Small</option>
+            <option>Medium</option>
+            <option>Large</option>
+            <option>Extra Large</option>
+          </select>
+          <div id="toppings">
+            <label class="checkbox-inline"><input type="checkbox" value="">TOPPING1</label>
+            <label class="checkbox-inline"><input type="checkbox" value="">TOPPING2</label>
+            <label class="checkbox-inline"><input type="checkbox" value="">TOPPING3</label>
+            <label class="checkbox-inline"><input type="checkbox" value="">TOPPING4</label>
+            <label class="checkbox-inline"><input type="checkbox" value="">TOPPING5</label>
+            <label class="checkbox-inline"><input type="checkbox" value="">TOPPING6</label>
+            <label class="checkbox-inline"><input type="checkbox" value="">TOPPING7</label>
+            <label class="checkbox-inline"><input type="checkbox" value="">TOPPING8</label>
+            <label class="checkbox-inline"><input type="checkbox" value="">TOPPING9</label>
+          </div>
+          <button type="button" name="button">Add Toppings</button>
+        </form>
+      </div>
+      <div class="salad-container">
+        <div class="row">
+          <div class="item col-md-4">
+            <h2 class="item-name">Grilled Chicken Salad</h1>
+            <img src="img/grilled-chicken-salad.jpg" alt="Grilled Chicken Salad" />
+            <p>Pellentesque pharetra, leo eget interdum sollicitudin, magna erat pharetra felis, eu facilisis augue diam non felis. Nulla aliquet augue ac nibh volutpat, euismod euismod tellus dignissim.</p>
+            <button class="btn" type="button">Add to Order</button>
+          </div>
+        </div>
+      </div>
+      <div class="sandwich-container">
+
+      </div>
+      <div class="side-container">
+
+      </div>
+      <div class="dessert-container">
+
+      </div>
+    </div>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
