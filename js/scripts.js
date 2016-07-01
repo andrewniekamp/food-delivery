@@ -1,7 +1,18 @@
 //Back-end
 function Pizza() {
   this.pizzaSize = false;
-  this.pizzaToppings = [1,2,3];
+  this.pizzaToppings = {
+    cheese: true,
+    pepperoni: false,
+    sausage: false,
+    mushroom: false,
+    onion: false,
+    olive: false,
+    bacon: false,
+    ham: false,
+    pineapple: false,
+    greenPepper: false,
+  };
 }
 
 function Salad() {
@@ -20,8 +31,13 @@ function Dessert() {
 }
 
 Pizza.prototype.price = function() {
-  this.pizzaPrice = this.pizzaToppings.length * 1.5;
-  return this.pizzaPrice;
+  var price = 0;
+  $.each(this.pizzaToppings, function(topping, existence) {
+    if (existence === true) {
+      price += 1.5;
+    }
+  })
+  this.pizzaPrice = price;
 }
 
 //Front-end
