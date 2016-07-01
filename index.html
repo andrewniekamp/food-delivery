@@ -18,52 +18,56 @@
     <!-- PIZZA AREA -->
     <div class="pizza-container">
       <div class="row">
-        <div class="item col-sm-4">
-          <h2 class="item-name">Cheese</h2>
-          <img src="img/pizza-cheese.jpg" alt="Pepperoni Pizza">
+        <div class="item col-md-4">
+          <h2 class="item-name"><span class="red">Limited: </span>Alfredo</h2>
+          <div class="center">
+            <img src="img/pizza-alfredo.jpg" alt="Pepperoni Pizza">
+          </div>
           <p>Pellentesque pharetra, leo eget interdum sollicitudin, magna erat pharetra felis, eu facilisis augue diam non felis. Nulla aliquet augue ac nibh volutpat, euismod euismod tellus dignissim.</p>
+          <h4 class="center-text">$18.99</h4>
           <button class="btn" type="button">Add to Order</button>
         </div>
-        <div class="item col-sm-4">
-          <h2 class="item-name">Pepperoni</h2>
+        <div class="item col-md-4">
+          <h2 class="item-name">Classic Pepperoni</h2>
           <img src="img/pizza-pepperoni.jpg" alt="Pepperoni Pizza">
           <p>Pellentesque pharetra, leo eget interdum sollicitudin, magna erat pharetra felis, eu facilisis augue diam non felis. Nulla aliquet augue ac nibh volutpat, euismod euismod tellus dignissim.</p>
+          <h4 class="center-text">$15.52</h4>
           <button class="btn" type="button">Add to Order</button>
         </div>
-        <div class="item col-sm-4">
-          <h2 class="item-name">Supreme</h2>
+        <div class="item col-md-4">
+          <h2 class="item-name"><span class="red">Special:</span> Supreme</h2>
           <img src="img/pizza-supreme.jpg" alt="Pepperoni Pizza">
           <p>Pellentesque pharetra, leo eget interdum sollicitudin, magna erat pharetra felis, eu facilisis augue diam non felis. Nulla aliquet augue ac nibh volutpat, euismod euismod tellus dignissim.</p>
+          <h4 class="center-text">$19.99</h4>
           <button class="btn" type="button">Add to Order</button>
         </div>
       </div>
 
       <!-- CUSTOM PIZZA AND ORDER TOTAL-->
       <div class="row">
-        <div class="item col-sm-4">
+        <div class="item col-md-4">
           <h2 class="item-name">Create Your Own</h2>
-          <img src="img/pizza-pepperoni.jpg" alt="Pepperoni Pizza" />
-          <p>Pellentesque pharetra, leo eget interdum sollicitudin, magna erat pharetra felis, eu facilisis augue diam non felis. Nulla aliquet augue ac nibh volutpat, euismod euismod tellus dignissim.</p>
-          <button class="btn" type="button">Add to Order</button>
+          <img src="img/build-your-own.jpg" alt="Pepperoni Pizza" />
+          <h4>To create your own pizza, choose your topping in the following section, select a size, and click the "Add to Order" button!</h4>
         </div>
-        <form id="topping-form" class="form form-group">
-          <div id="toppings" class="col-sm-4">
+        <div id="toppings" class="item col-md-4">
+          <form id="topping-form" class="form form-group">
+            <h2 class="item-name">Toppings</h2>
             <div class="row">
-              <label class="col-xs-4 checkbox-inline"><input type="checkbox" name="custom">Cheese</label>
-              <label class="col-xs-4 checkbox-inline"><input type="checkbox" name="custom">Pepperoni</label>
-              <label class="col-xs-4 checkbox-inline"><input type="checkbox" name="custom">Sausage</label>
+              <label class="col-xs-4 checkbox-inline"><input type="checkbox" name="custom" value="Bacon">Bacon</label>
+              <label class="col-xs-4 checkbox-inline"><input type="checkbox" name="custom" value="Pepperoni">Pepperoni</label>
+              <label class="col-xs-4 checkbox-inline"><input type="checkbox" name="custom" value="Sausage">Sausage</label>
             </div>
             <div class="row">
-              <label class="col-xs-4 checkbox-inline"><input type="checkbox" name="custom">Mushroom</label>
-              <label class="col-xs-4 checkbox-inline"><input type="checkbox" name="custom">Onion</label>
-              <label class="col-xs-4 checkbox-inline"><input type="checkbox" name="custom">Olive</label>
+              <label class="col-xs-4 checkbox-inline"><input type="checkbox" name="custom" value="Mushroom">Mushroom</label>
+              <label class="col-xs-4 checkbox-inline"><input type="checkbox" name="custom" value="Onion">Onion</label>
+              <label class="col-xs-4 checkbox-inline"><input type="checkbox" name="custom" value="Olive">Olive</label>
             </div>
             <div class="row">
-              <label class="col-xs-4 checkbox-inline"><input type="checkbox" name="custom">Green Pepper</label>
-              <label class="col-xs-4 checkbox-inline"><input type="checkbox" name="custom">Ham</label>
-              <label class="col-xs-4 checkbox-inline"><input type="checkbox" name="custom">Pineapple</label>
+              <label class="col-xs-4 checkbox-inline"><input type="checkbox" name="custom" value="Green">Green Pepper</label>
+              <label class="col-xs-4 checkbox-inline"><input type="checkbox" name="custom" value="Ham">Ham</label>
+              <label class="col-xs-4 checkbox-inline"><input type="checkbox" name="custom" value="Pineapple">Pineapple</label>
             </div>
-            <button id="add-toppings" class="btn" type="button">Add Toppings</button><br>
             <select id="custom-size" class="form-control" required>
               <option disabled selected value="">Select a Size</option>
               <option value=".85">Small</option>
@@ -72,20 +76,23 @@
               <option value="1.25">Extra Large</option>
             </select>
             <button class="btn" type="submit">Add to Order</button>
-          </div>
-        </form>
-        <div id="pending-order" class="item col-sm-4">
+          </form>
+        </div>
+        <div id="pending-order" class="item col-md-4">
           <h2 class="item-name">Order Total</h2>
           <div class="img-container">
-            <img src="img/pickup.png" alt="Pepperoni Pizza" />
-            <img src="img/delivery.png" alt="" />
+            <img src="img/pickup.png" alt="Pickup Graphic" />
+            <img src="img/delivery.png" alt="Delivery Graphic" />
           </div>
-          <p>Pellentesque pharetra, leo eget interdum sollicitudin, magna erat pharetra felis, eu facilisis augue diam non felis. Nulla aliquet augue ac nibh volutpat, euismod euismod tellus dignissim.</p>
+          <h3>Pending Order</h3>
+          <ol id="order-items">
+            <li id="empty">Empty!</li>
+          </ol>
+          <h3 id="order-listing-total"></h3>
           <button class="btn" type="button">Submit Order</button>
+          <button id="clear-button" class="btn" type="button">Clear Order</button>
         </div>
       </div>
-      <form id="pizza-form" class="form form-group">
-      </form>
     </div>
 
     <!-- SALAD/SIDE/DESSER AREA -->
