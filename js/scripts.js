@@ -30,9 +30,9 @@ var pizzaBase = 12;
 //Front-end
 $(function() {
   //Why can't this submit when selecting form ID?
-  $("form").submit(function(event) {
+  $("form#topping-form").submit(function(event) {
     event.preventDefault();
-    
+
     var sizeInput = $("#custom-size").val();
     var customPizza = new Pizza(sizeInput);
     $("input:checkbox[name=custom]:checked").each(function() {
