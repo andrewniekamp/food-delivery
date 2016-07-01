@@ -1,6 +1,6 @@
 //Back-end
 function Pizza() {
-  this.pizzaSize = false;
+  this.pizzaSizeModifier = 1;
   this.pizzaToppings = [1,2,3];
 }
 
@@ -20,8 +20,11 @@ function Dessert() {
 }
 
 Pizza.prototype.pizzaTotal = function() {
-  this.pizzaPrice = this.pizzaToppings.length * 1.5;
+  this.pizzaPrice = pizzaBase + this.pizzaToppings.length * 1.5;
+  this.pizzaPrice *= this.pizzaSizeModifier;
 }
+
+var pizzaBase = 12;
 
 //Front-end
 $(function() {

@@ -1,3 +1,7 @@
 .item img {
-  max-width: 250px;
+  max-width: 100%;
+}
+
+.item {
+  border: 1px solid black;
 }

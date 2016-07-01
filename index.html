@@ -8,29 +8,32 @@
   </head>
   <body>
     <div class="container">
-      <div class="pizza-container">
 
+      <!-- PIZZA AREA -->
+      <div class="pizza-container">
         <form id="pizza-form" class="form form-group">
           <div class="row">
-            <div class="item col-md-4">
+            <div class="item col-sm-4">
               <h2 class="item-name">Cheese</h1>
               <img src="img/pizza-cheese.jpg" alt="Pepperoni Pizza" />
               <p>Pellentesque pharetra, leo eget interdum sollicitudin, magna erat pharetra felis, eu facilisis augue diam non felis. Nulla aliquet augue ac nibh volutpat, euismod euismod tellus dignissim.</p>
               <button class="btn" type="button">Add to Order</button>
             </div>
-            <div class="item col-md-4">
+            <div class="item col-sm-4">
               <h2 class="item-name">Pepperoni</h1>
               <img src="img/pizza-pepperoni.jpg" alt="Pepperoni Pizza" />
               <p>Pellentesque pharetra, leo eget interdum sollicitudin, magna erat pharetra felis, eu facilisis augue diam non felis. Nulla aliquet augue ac nibh volutpat, euismod euismod tellus dignissim.</p>
               <button class="btn" type="button">Add to Order</button>
             </div>
-            <div class="item col-md-4">
+            <div class="item col-sm-4">
               <h2 class="item-name">Supreme</h1>
               <img src="img/pizza-supreme.jpg" alt="Pepperoni Pizza" />
               <p>Pellentesque pharetra, leo eget interdum sollicitudin, magna erat pharetra felis, eu facilisis augue diam non felis. Nulla aliquet augue ac nibh volutpat, euismod euismod tellus dignissim.</p>
               <button class="btn" type="button">Add to Order</button>
             </div>
           </div>
+
+          <!-- CUSTOM PIZZA -->
           <div class="row">
             <div class="item col-sm-4">
               <h2 class="item-name">Create Your Own</h1>
@@ -55,20 +58,28 @@
                   <label class="checkbox-inline"><input type="checkbox" value="">Ham</label>
                   <label class="checkbox-inline"><input type="checkbox" value="">Pineapple</label>
                 </div>
-                <button class="btn" type="button">Add Toppings</button>
+                <button class="btn" type="button">Add Toppings</button><br>
+                <select id="size" class="form-control" required>
+                  <option disabled selected>Select a Size</option>
+                  <option value=".85">Small</option>
+                  <option value="1">Medium</option>
+                  <option value="1.15">Large</option>
+                  <option value="1.25">Extra Large</option>
+                </select>
               </div>
             </form>
           </div>
           <label for="size"></label>
           <select id="size" class="form-control">
-            <option>Small</option>
-            <option>Medium</option>
-            <option>Large</option>
-            <option>Extra Large</option>
+            <option value=".85">Small</option>
+            <option value="1">Medium</option>
+            <option value="1.15">Large</option>
+            <option value="1.25">Extra Large</option>
           </select>
-
         </form>
       </div>
+
+      <!-- SALAD AREA -->
       <div class="salad-container">
         <div class="row">
           <div class="item col-md-4">
