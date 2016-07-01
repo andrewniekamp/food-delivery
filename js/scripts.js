@@ -1,7 +1,7 @@
 //Back-end
-function Pizza() {
-  this.pizzaSizeModifier = 1;
-  this.pizzaToppings = [1,2,3];
+function Pizza(size) {
+  this.pizzaSizeModifier = size;
+  this.pizzaToppings = [];
 }
 
 function Salad() {
@@ -20,6 +20,7 @@ function Dessert() {
 }
 
 Pizza.prototype.pizzaTotal = function() {
+
   this.pizzaPrice = pizzaBase + this.pizzaToppings.length * 1.5;
   this.pizzaPrice *= this.pizzaSizeModifier;
 }
@@ -28,6 +29,17 @@ var pizzaBase = 12;
 
 //Front-end
 $(function() {
-
+  //Why can't this submit when selecting form ID?
+  $("form").submit(function(event) {
+    event.preventDefault();
+    
+    var sizeInput = $("#custom-size").val();
+    var customPizza = new Pizza(sizeInput);
+    $("input:checkbox[name=custom]:checked").each(function() {
+      customPizza.pizzaToppings.push($(this).val());
+    })
+    customPizza.pizzaTotal();
+    console.log(customPizza.pizzaPrice);
+  });
   // newPizza.pizzaTotal();
 });

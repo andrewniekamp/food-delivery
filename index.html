@@ -41,31 +41,32 @@
               <p>Pellentesque pharetra, leo eget interdum sollicitudin, magna erat pharetra felis, eu facilisis augue diam non felis. Nulla aliquet augue ac nibh volutpat, euismod euismod tellus dignissim.</p>
               <button class="btn" type="button">Add to Order</button>
             </div>
-            <form id="topping-form" class="form">
+            <form id="topping-form" class="form form-group">
               <div id="toppings" class="col-sm-8">
                 <div class="row">
-                  <label class="checkbox-inline"><input type="checkbox" value="">Cheese</label>
-                  <label class="checkbox-inline"><input type="checkbox" value="">Pepperoni</label>
-                  <label class="checkbox-inline"><input type="checkbox" value="">Sausage</label>
+                  <label class="checkbox-inline"><input type="checkbox" name="custom">Cheese</label>
+                  <label class="checkbox-inline"><input type="checkbox" name="custom">Pepperoni</label>
+                  <label class="checkbox-inline"><input type="checkbox" name="custom">Sausage</label>
                 </div>
                 <div class="row">
-                  <label class="checkbox-inline"><input type="checkbox" value="">Mushroom</label>
-                  <label class="checkbox-inline"><input type="checkbox" value="">Onion</label>
-                  <label class="checkbox-inline"><input type="checkbox" value="">Olive</label>
+                  <label class="checkbox-inline"><input type="checkbox" name="custom">Mushroom</label>
+                  <label class="checkbox-inline"><input type="checkbox" name="custom">Onion</label>
+                  <label class="checkbox-inline"><input type="checkbox" name="custom">Olive</label>
                 </div>
                 <div class="row">
-                  <label class="checkbox-inline"><input type="checkbox" value="">Green Pepper</label>
-                  <label class="checkbox-inline"><input type="checkbox" value="">Ham</label>
-                  <label class="checkbox-inline"><input type="checkbox" value="">Pineapple</label>
+                  <label class="checkbox-inline"><input type="checkbox" name="custom">Green Pepper</label>
+                  <label class="checkbox-inline"><input type="checkbox" name="custom">Ham</label>
+                  <label class="checkbox-inline"><input type="checkbox" name="custom">Pineapple</label>
                 </div>
-                <button class="btn" type="button">Add Toppings</button><br>
-                <select id="size" class="form-control" required>
-                  <option disabled selected>Select a Size</option>
+                <button id="add-toppings" class="btn" type="button">Add Toppings</button><br>
+                <select id="custom-size" class="form-control" required>
+                  <option disabled selected value="">Select a Size</option>
                   <option value=".85">Small</option>
                   <option value="1">Medium</option>
                   <option value="1.15">Large</option>
                   <option value="1.25">Extra Large</option>
                 </select>
+                <button class="btn" type="submit">Add to Order</button>
               </div>
             </form>
           </div>
