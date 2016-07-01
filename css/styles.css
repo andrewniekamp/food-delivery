@@ -2,6 +2,7 @@
 #banner {
  width: 100%;
  height: 100px;
+ background-color: white;
 }
 
 #business-name {
@@ -14,8 +15,13 @@
   margin-right: 0;
 }
 
+/*Main Content*/
 #main-container {
   padding-top: 100px;
+}
+
+#topping-form {
+  margin: 0;
 }
 
 /*Food Items*/
@@ -25,4 +31,20 @@
 
 .item {
   border: 1px solid black;
+  padding: 3%;
+}
+
+#toppings {
+  padding: 3%;
+}
+
+.checkbox-inline {
+  color: blue;
+  margin: 5px 0 !important;
+}
+
+/*Order Total*/
+.img-container img {
+  width: 49%;
+  display: inline;
 }

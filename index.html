@@ -10,7 +10,7 @@
   <div id="banner" class="navbar-fixed-top container-fluid">
     <h1 id="business-name">Pizza Place Name</h1>
     <div id="pricing">
-      <h1>Total: $20.00</h1>
+      <h1 id="price-output"></h1>
     </div>
   </div>
   <div id="main-container" class="container">
@@ -38,7 +38,7 @@
         </div>
       </div>
 
-      <!-- CUSTOM PIZZA -->
+      <!-- CUSTOM PIZZA AND ORDER TOTAL-->
       <div class="row">
         <div class="item col-sm-4">
           <h2 class="item-name">Create Your Own</h2>
@@ -47,21 +47,21 @@
           <button class="btn" type="button">Add to Order</button>
         </div>
         <form id="topping-form" class="form form-group">
-          <div id="toppings" class="col-sm-8">
+          <div id="toppings" class="col-sm-4">
             <div class="row">
-              <label class="checkbox-inline"><input type="checkbox" name="custom">Cheese</label>
-              <label class="checkbox-inline"><input type="checkbox" name="custom">Pepperoni</label>
-              <label class="checkbox-inline"><input type="checkbox" name="custom">Sausage</label>
+              <label class="col-xs-4 checkbox-inline"><input type="checkbox" name="custom">Cheese</label>
+              <label class="col-xs-4 checkbox-inline"><input type="checkbox" name="custom">Pepperoni</label>
+              <label class="col-xs-4 checkbox-inline"><input type="checkbox" name="custom">Sausage</label>
             </div>
             <div class="row">
-              <label class="checkbox-inline"><input type="checkbox" name="custom">Mushroom</label>
-              <label class="checkbox-inline"><input type="checkbox" name="custom">Onion</label>
-              <label class="checkbox-inline"><input type="checkbox" name="custom">Olive</label>
+              <label class="col-xs-4 checkbox-inline"><input type="checkbox" name="custom">Mushroom</label>
+              <label class="col-xs-4 checkbox-inline"><input type="checkbox" name="custom">Onion</label>
+              <label class="col-xs-4 checkbox-inline"><input type="checkbox" name="custom">Olive</label>
             </div>
             <div class="row">
-              <label class="checkbox-inline"><input type="checkbox" name="custom">Green Pepper</label>
-              <label class="checkbox-inline"><input type="checkbox" name="custom">Ham</label>
-              <label class="checkbox-inline"><input type="checkbox" name="custom">Pineapple</label>
+              <label class="col-xs-4 checkbox-inline"><input type="checkbox" name="custom">Green Pepper</label>
+              <label class="col-xs-4 checkbox-inline"><input type="checkbox" name="custom">Ham</label>
+              <label class="col-xs-4 checkbox-inline"><input type="checkbox" name="custom">Pineapple</label>
             </div>
             <button id="add-toppings" class="btn" type="button">Add Toppings</button><br>
             <select id="custom-size" class="form-control" required>
@@ -74,6 +74,15 @@
             <button class="btn" type="submit">Add to Order</button>
           </div>
         </form>
+        <div id="pending-order" class="item col-sm-4">
+          <h2 class="item-name">Order Total</h2>
+          <div class="img-container">
+            <img src="img/pickup.png" alt="Pepperoni Pizza" />
+            <img src="img/delivery.png" alt="" />
+          </div>
+          <p>Pellentesque pharetra, leo eget interdum sollicitudin, magna erat pharetra felis, eu facilisis augue diam non felis. Nulla aliquet augue ac nibh volutpat, euismod euismod tellus dignissim.</p>
+          <button class="btn" type="button">Submit Order</button>
+        </div>
       </div>
       <form id="pizza-form" class="form form-group">
       </form>

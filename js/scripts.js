@@ -39,7 +39,7 @@ $(function() {
       customPizza.pizzaToppings.push($(this).val());
     })
     customPizza.pizzaTotal();
-    console.log(customPizza.pizzaPrice);
+    $("#price-output").text(customPizza.pizzaPrice);
   });
   // newPizza.pizzaTotal();
 });
