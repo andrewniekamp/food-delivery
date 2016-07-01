@@ -7,12 +7,14 @@
   <title></title>
 </head>
 <body>
+
   <div id="banner" class="navbar-fixed-top container-fluid">
     <h1 id="business-name">Pizza Place Name</h1>
     <div id="pricing">
       <h1 id="price-output"></h1>
     </div>
   </div>
+
   <div id="main-container" class="container">
 
     <!-- PIZZA AREA -->
@@ -84,37 +86,19 @@
             <img src="img/pickup.png" alt="Pickup Graphic" />
             <img src="img/delivery.png" alt="Delivery Graphic" />
           </div>
-          <h3>Pending Order</h3>
-          <ol id="order-items">
-            <li id="empty">Empty!</li>
-          </ol>
-          <h3 id="order-listing-total"></h3>
           <button class="btn" type="button">Submit Order</button>
           <button id="clear-button" class="btn" type="button">Clear Order</button>
         </div>
       </div>
     </div>
-
-    <!-- SALAD/SIDE/DESSER AREA -->
-    <!-- <div class="salad-container">
-    <div class="row">
-    <div class="item col-md-4">
-    <h2 class="item-name">Grilled Chicken Salad</h2>
-    <img src="img/grilled-chicken-salad.jpg" alt="Grilled Chicken Salad" />
-    <p>Pellentesque pharetra, leo eget interdum sollicitudin, magna erat pharetra felis, eu facilisis augue diam non felis. Nulla aliquet augue ac nibh volutpat, euismod euismod tellus dignissim.</p>
-    <button class="btn" type="button">Add to Order</button>
-  </div>
 </div>
-</div> -->
-<!-- <div class="sandwich-container">
-
-</div>
-<div class="side-container">
-
-</div>
-<div class="dessert-container">
-
-</div> -->
+<div id="sidebar">
+  <h2 id="vertical-text">^ Curent Order</h2>
+  <h3>Pending Order</h3>
+  <ol id="order-items">
+    <li id="empty">Empty!</li>
+  </ol>
+  <h4 id="order-listing-total"></h4>
 </div>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>

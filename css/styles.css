@@ -19,7 +19,7 @@
 /*Main Content*/
 
 body {
-  background-color: #50514F;
+  background-color: #247BA0;
 }
 
 .red {
@@ -35,7 +35,7 @@ body {
   text-align: center;
 }
 #main-container {
-  padding-top: 100px;
+  padding-top: 95px;
 }
 
 #topping-form {
@@ -51,7 +51,7 @@ body {
 }
 
 #pending-order .btn {
-  width: 48r%;
+  width: 48%;
 }
 
 /*Food Items*/
@@ -60,14 +60,14 @@ body {
   height: 200px;
   display: block;
   margin: 10px auto 30px;
-  border: 2px #F25F5C solid;
+  border: 3px #FFE066 solid;
 }
 
 .item {
-  border: 1px solid black;
+  border: 5px solid #247BA0;
   padding: 3%;
   min-height: 526px;
-  background-color: #247BA0;
+  background-color: #50514F;
   color: white;
 }
 
@@ -82,7 +82,8 @@ body {
 }
 
 .checkbox-inline {
-  color: blue;
+  color: white;
+  font-size: 16px;
   margin: 5px 0 !important;
 }
 
@@ -95,8 +96,47 @@ body {
 .img-container img {
   width: 48%;
   display: inline;
+  border: none;
 }
 
 .img-container {
   text-align: center;
+}
+
+#sidebar {
+  width: 250px;
+  min-height: 50%;
+  position: absolute;
+  top: 120px;
+  left: -205px;
+  background-color: white;
+  padding-left: 10px;
+  border-right: 3px solid #F25F5C;
+  border-top: 3px solid #F25F5C;
+  border-bottom: 3px solid #F25F5C;
+}
+
+#vertical-text {
+  transform: rotate(90deg);
+  position: relative;
+  left: 97px;
+  top: 110px;
+}
+
+#sidebar p {
+  padding-right: 40px;
+}
+
+#sidebar li {
+  max-width: 155px;
+  font-size: 14px;
+  border-bottom: 1px solid #50514F;
+}
+
+#sidebar ol {
+  margin-bottom: 20px;
+}
+
+#sidebar h3 {
+  margin-top: -55px;
 }

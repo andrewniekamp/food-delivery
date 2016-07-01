@@ -28,6 +28,7 @@ Pizza.prototype.pizzaTotal = function() {
 
 var pizzaBase = 12;
 var orderTotal = 0;
+var orderSideBar = false;
 
 //Front-end
 $(function() {
@@ -48,7 +49,7 @@ $(function() {
     customPizza.pizzaToppings.forEach(function(topping) {
       $("#order-items li").last().append(topping + " ");
     })
-    $("#order-items li").last().append(": " + customPizza.pizzaPrice + "</li>");
+    $("#order-items li").last().append(" <br>  for: $" + customPizza.pizzaPrice + "</li>");
     $("#price-output").text("Order Total: $" + parseFloat(orderTotal).toFixed(2));
     $("#order-listing-total").text("Order Total: $" +  parseFloat(orderTotal).toFixed(2));
 
@@ -59,5 +60,22 @@ $(function() {
       $("#order-listing-total").text("Order Total: $0.00");
     });
   });
+  $("#vertical-text").click(function() {
+    if (orderSideBar === false) {
+      console.log(orderSideBar);
+      $("#sidebar").animate({
+        left: 0,
+      });
+      orderSideBar = true;
+      console.log(orderSideBar);
+    } else {
+      console.log(orderSideBar);
+      $("#sidebar").animate({
+        left: -205,
+      });
+      orderSideBar = false;
+      console.log(orderSideBar);
+    }
+  })
   // newPizza.pizzaTotal();
 });
