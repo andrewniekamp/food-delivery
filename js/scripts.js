@@ -1,8 +1,7 @@
 //Back-end
 function Pizza() {
   this.pizzaSize = false;
-  this.pizzaToppings = [];
-  this.pizzaPrice = 0;
+  this.pizzaToppings = [1,2,3];
 }
 
 function Salad() {
@@ -18,6 +17,11 @@ function Side() {
 function Dessert() {
   this.dessertType = false;
   this.dessertPrice = 0;
+}
+
+Pizza.prototype.price = function() {
+  this.pizzaPrice = this.pizzaToppings.length * 1.5;
+  return this.pizzaPrice;
 }
 
 //Front-end
