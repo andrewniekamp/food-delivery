@@ -112,7 +112,7 @@ body {
 
 #sidebar {
   width: 250px;
-  min-height: 50%;
+  min-height: 270px;
   position: fixed;
   top: 140px;
   left: -205px;
@@ -154,5 +154,15 @@ body {
   }
   #topping-form .row {
     margin-left: 100px;
+  }
+  #topping-form input[type="checkbox"] {
+    width: 40px;
+    height: 40px;
+    margin-left: -60px;
+  }
+  #topping-form label {
+    padding-left: 95px;
+    font-size: 24px;
+    display: inline;
   }
 }
