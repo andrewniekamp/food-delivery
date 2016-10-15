@@ -9,9 +9,9 @@ _Allows the user to assemble and submit a food order, with various options (as J
 
 ## Setup/Installation
 
-_Files can be cloned from https://github.com/aniekamp/food-delivery.git and run in the browser._
+_Files can be cloned from https://github.com/andrewniekamp/food-delivery.git and run in the browser._
 
-Viewable on GitHub Pages at: https://aniekamp.github.io/food-delivery/
+Viewable on GitHub Pages at: https://andrewniekamp.github.io/food-delivery/
 
 ## Specifications
 | Behavior | Input Example | Output Example |
